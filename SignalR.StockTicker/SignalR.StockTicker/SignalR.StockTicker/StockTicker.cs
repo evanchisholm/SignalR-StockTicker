@@ -111,9 +111,9 @@ namespace Microsoft.AspNet.SignalR.StockTicker
 
             var stocks = new List<Stock>
             {
-                new Stock { Symbol = "MSFT", Price = 41.68m },
-                new Stock { Symbol = "AAPL", Price = 92.08m },
-                new Stock { Symbol = "GOOG", Price = 543.01m }
+                new Stock { Symbol = "E2C", Price = 41.68m },
+                new Stock { Symbol = "F16", Price = 23.08m },
+                new Stock { Symbol = "F22", Price = 60.01m }
             };
 
             stocks.ForEach(stock => _stocks.TryAdd(stock.Symbol, stock));

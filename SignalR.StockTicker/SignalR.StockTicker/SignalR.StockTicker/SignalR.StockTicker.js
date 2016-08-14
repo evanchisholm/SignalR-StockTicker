@@ -74,8 +74,8 @@ $(function () {
                 $row = $(rowTemplate.supplant(displayStock)),
                 $li = $(liTemplate.supplant(displayStock)),
                 bg = stock.LastChange < 0
-                        ? '255,148,148' // red
-                        : '154,240,117'; // green
+                        ? '154,240,117' // red
+                        : '255,148,148'; // green
 
             $stockTableBody.find('tr[data-symbol=' + stock.Symbol + ']')
                 .replaceWith($row);

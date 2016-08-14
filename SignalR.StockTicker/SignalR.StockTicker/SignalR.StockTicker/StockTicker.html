@@ -5,17 +5,17 @@
     <link href="StockTicker.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>ASP.NET SignalR Stock Ticker Sample</h1>
+    <h1>ASP.NET SignalR Platform TSDF Monitor</h1>
 
-    <input type="button" id="open" value="Open Market" />
-    <input type="button" id="close" value="Close Market" disabled="disabled" />
+    <input type="button" id="open" value="Start Monitor" />
+    <input type="button" id="close" value="Stop Monitor" disabled="disabled" />
     <input type="button" id="reset" value="Reset" />
 
-    <h2>Live Stock Table</h2>
+    <h2>Live Platform TSDF</h2>
     <div id="stockTable">
         <table border="1">
             <thead>
-                <tr><th>Symbol</th><th>Price</th><th>Open</th><th>High</th><th>Low</th><th>Change</th><th>%</th></tr>
+                <tr><th>Platform</th><th>Last TSDF</th><th>Planned TSDF</th><th>High</th><th>Low</th><th>Change</th><th>%</th></tr>
             </thead>
             <tbody>
                 <tr class="loading"><td colspan="7">loading...</td></tr>
@@ -23,7 +23,7 @@
         </table>
     </div>
 
-    <h2>Live Stock Ticker</h2>
+    <h2>Live TSDF Feed</h2>
     <div id="stockTicker">
         <div class="inner">
             <ul>
